@@ -72,21 +72,21 @@
               <form>
                 <div class="form-group">
                   <label for="employee-name-input">Train Name</label>
-                  <input class="form-control" id="employee-name-input" type="text">
+                  <input class="form-control" id="train-name" type="text">
                 </div>
                 <div class="form-group">
                   <label for="role-input">Destination</label>
-                  <input class="form-control" id="role-input" type="text">
+                  <input class="form-control" id="dest-input" type="text">
                 </div>
                 <div class="form-group">
                   <label for="start-input">First Train Time (HH:mm - military time)</label>
-                  <input class="form-control" id="start-input" type="text">
+                  <input class="form-control" id="start-input" type="time">
                 </div>
                 <div class="form-group">
                   <label for="rate-input">Frequency (min)</label>
                   <input class="form-control" id="rate-input" type="text">
                 </div>
-                <button style="background-color: black" class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+                <button style="background-color: black" class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
               </form>
 
             </div>
@@ -100,7 +100,20 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZfJnM2iO4GPhJ00fpVMRdfowrosdupR8",
+    authDomain: "train-timer-a3746.firebaseapp.com",
+    databaseURL: "https://train-timer-a3746.firebaseio.com",
+    projectId: "train-timer-a3746",
+    storageBucket: "",
+    messagingSenderId: "53713713829"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="assets/javascript/app.js"></script>
 
   </body>
 
