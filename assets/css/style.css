@@ -1,0 +1,20 @@
+body {
+    background-image: url("../images/tracks.jpg")
+}
+.panel-body {
+    background-color: black;
+    color:white;
+}
+.panel-title {
+    background-color: black;
+ 
+}
+.panel-heading {
+    background-color: black;
+    border-color: black;
+
+}
+.panel-primary {
+    background-color: black;
+    border-color: black;
+}
